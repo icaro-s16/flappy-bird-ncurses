@@ -142,8 +142,8 @@ int main()
     w_gameover.x = 20;
     w_gameover.y = 10;
     // definição das estruturas da tela de principal
-    w_game.y = 55;
-    w_game.x = 110;
+    w_game.y = 40;
+    w_game.x = 90;
     w_game.max_y = w_game.y - 2;
     w_game.min_y = 1;
     w_game.max_x = w_game.x - 2;
@@ -157,7 +157,7 @@ int main()
         return 1;
     };
     game = subwin(stdscr, w_game.y, w_game.x, (LINES - w_game.y) / 2, (COLS - w_game.x) / 2);
-    stats = subwin(stdscr, w_stats.y, w_stats.x, (LINES-55) / 2, (COLS-170) / 2);
+    stats = subwin(stdscr, w_stats.y, w_stats.x, (LINES-35) / 2, (COLS-140) / 2);
     keypad(game, true);
     wtimeout(game, 0);
     curs_set(0);
